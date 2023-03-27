@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // Constante que irá coletar as informações dos produtos da API
 export const ListProducts = () => {
   const [data, setData] = useState([]);
+
   const listDataProducts = async () => {
     const res = await fetch(`${API_URL}/products`);
     const response = await res.json();
@@ -24,7 +25,7 @@ export const ListProducts = () => {
           {data.map((item, index) => {
             return (
               <div key={index} className={styles.list_items}>
-                <Link to={`/ProductsId/${item.id}`} className={styles.link}>
+                <Link to={`/products/${item.id}`} className={styles.link}>
                   <img src={item.image} alt="Imagem do Produto" width={200} />
                   <h2>{item.title}</h2>
                   <br />

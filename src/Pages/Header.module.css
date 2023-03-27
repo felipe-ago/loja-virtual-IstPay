@@ -1,0 +1,21 @@
+.header{
+    background: var(--gray-100);
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 15%;
+}
+
+.car{
+    width: 5%;
+    height: 5%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
