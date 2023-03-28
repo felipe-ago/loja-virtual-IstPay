@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O IstPay Store, trata-se de um aloja virtual fictícia, que utiliza produtos da API "FakeStoreapi". Foi utilizado React + Vite para criação do projeto, trabalhando com JavScript, HTML, CSS e Bootstrap.
 
-***- [Visite o projeto online](https://instagram-clone-curso-e7a1b.web.app)
+***- [Visite o projeto online]
 
 ## 🛠 Instalação Dev
 
