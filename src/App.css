@@ -1,5 +1,6 @@
 :root {
     --white: #ffffff;
+    --black: #000000;
   
     --gray-100: #e1e1e6;
     --gray-300: #c4c4cc;
@@ -11,6 +12,16 @@
   
     --green-500: #00b37e;
     --green-800: #00875f;
+
+    --orange-800: #FF4500;
+    --orange-500: #FF8C00;
+    --orange-300: #FFA500;
   
     --red: #f75a68;
   }
+
+  body, input, textarea, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
