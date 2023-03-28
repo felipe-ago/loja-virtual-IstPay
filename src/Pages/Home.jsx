@@ -1,3 +1,4 @@
+import { Carrossel } from "./Carrossel";
 import { CategoryProducts } from "./categoryProducts/CategoryProducts";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -6,8 +7,9 @@ import { ListProducts } from "./listProducts/ListProducts";
 
 export function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <Header />
+      <Carrossel/>
       <ListProducts />
       <Footer />
     </div>
