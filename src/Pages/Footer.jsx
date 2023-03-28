@@ -10,10 +10,10 @@ export function Footer() {
       <div className={styles.redes}>
       <h3>Redes e Diretórios</h3>
       <a href="https://github.com/felipe-ago">
-        <img className={styles.logo} src="./src/assets/github.png" /> GitHub
+        <img className={styles.logo} src="../src/assets/github.png" /> GitHub
       </a>
       <a href="https://www.linkedin.com/in/felipeantoniooliveira/">
-        <img className={styles.logo} src="./src/assets/linkedin.png" /> LinkedIn
+        <img className={styles.logo} src="../src/assets/linkedin.png" /> LinkedIn
       </a>
       </div>
     </div>

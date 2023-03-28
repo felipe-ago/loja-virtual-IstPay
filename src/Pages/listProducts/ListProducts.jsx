@@ -2,9 +2,17 @@ import styles from "./ListProducts.module.css";
 import { API_URL } from "../../Api";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { BiStar } from "react-icons/bi";
 
 // Constante que irá coletar as informações dos produtos da API
 export const ListProducts = () => {
+  // For para validar as informações nas estrelas de avaliação
+  const star = [];
+
+  for (let i = 0; i < 5; i++) {
+    star.push(i);
+  }
+
   const [data, setData] = useState([]);
 
   const listDataProducts = async () => {
@@ -29,6 +37,14 @@ export const ListProducts = () => {
                   <img src={item.image} alt="Imagem do Produto" width={200} />
                   <h2>{item.title}</h2>
                   <br />
+                  <div className={styles.evaluations}>
+                    {star.map((index) => (
+                      <BiStar key={index} className={styles.star} />
+                    ))}
+                    <span><strong>{item.rating.rate}</strong></span>
+                    <h4>Avaliações: {item.rating.count}</h4>
+                    <br />
+                  </div>
                   <button className={styles.btn_info}>Mais Informações</button>
                 </Link>
               </div>

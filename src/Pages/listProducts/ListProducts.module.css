@@ -36,6 +36,21 @@
     transform: scale(1.1);
     transition: .2s all ease-in-out;
 }
+
+.evaluations{
+    width: 50%;
+    margin: auto;
+}
+
+.star{
+    color: var(--orange-500);
+    
+}
+
+.evaluations span{
+    margin-left: 10px;
+}
+
 .link{
     text-decoration: none;
     font-size: 16px;
