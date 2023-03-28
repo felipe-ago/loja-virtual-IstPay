@@ -7,9 +7,15 @@ export function Footer() {
         Loja Fictícia, desenvolvida por, Felipe Oliveira, para Teste
         Desenvolvedor Front-End
       </h3>
-      <h3 className={styles.redes}>Redes e Diretórios</h3>
-      <a><img src=""/> GitHub</a>
-      <a><img/> LinkedIn</a>
+      <div className={styles.redes}>
+      <h3>Redes e Diretórios</h3>
+      <a href="https://github.com/felipe-ago">
+        <img className={styles.logo} src="./src/assets/github.png" /> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/felipeantoniooliveira/">
+        <img className={styles.logo} src="./src/assets/linkedin.png" /> LinkedIn
+      </a>
+      </div>
     </div>
   );
 }
