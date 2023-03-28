@@ -2,11 +2,11 @@ import styles from "./Carrossel.module.css";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-import image1 from "../assets/carrosel/1.jpg";
-import image2 from "../assets/carrosel/2.jpg";
-import image3 from "../assets/carrosel/3.jpg";
-import image4 from "../assets/carrosel/4.jpg";
-import image5 from "../assets/carrosel/5.jpg";
+import image1 from "../../assets/carrosel/1.jpg";
+import image2 from "../../assets/carrosel/2.jpg";
+import image3 from "../../assets/carrosel/3.jpg";
+import image4 from "../../assets/carrosel/4.jpg";
+import image5 from "../../assets/carrosel/5.jpg";
 
 const images = [image1, image2, image3, image4, image5];
 

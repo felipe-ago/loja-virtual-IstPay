@@ -2,8 +2,8 @@ import styles from "./ProductsId.module.css";
 import { API_URL } from "../../Api";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Header } from "../Header";
-import { Footer } from "../Footer";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
 
 export const ProductsId = () => {
   const [loaded, setLoaded] = useState(false);
@@ -37,6 +37,7 @@ export const ProductsId = () => {
           <h2>{itemId.title}</h2>
           <strong>R$ {itemId.price}</strong>
           <p>{itemId.description}</p>
+          <button className={styles.buy}>COMPRAR</button>
           </div>
         </div>
       </ul>
